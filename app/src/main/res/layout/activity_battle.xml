@@ -11,7 +11,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_marginStart="50dp" />
+        android:layout_marginStart="50dp"
+        app:srcCompat="@drawable/ic_1456914" />
 
     <TextView
         android:id="@+id/activity_battle_nameText"
@@ -27,7 +28,6 @@
         android:layout_marginTop="10dp"
         android:text="Attaque basique"
         android:layout_marginStart="20dp"/>
-
     <Button
         android:id="@+id/activity_battle_buttonSpecial"
         android:layout_width="wrap_content"
@@ -44,13 +44,13 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="40dp"
         android:textStyle="bold" />
-
     <ImageView
         android:id="@+id/activity_battle_imageCaract2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_marginStart="50dp" />
+        android:layout_marginStart="50dp"
+        app:srcCompat="@drawable/ic_1456914" />
 
     <TextView
         android:id="@+id/activity_battle_nameText2"
@@ -67,7 +67,6 @@
         android:layout_marginTop="10dp"
         android:text="Attaque basique"
         android:layout_marginStart="20dp"/>
-
     <Button
         android:id="@+id/activity_battle_buttonSpecial2"
         android:layout_width="wrap_content"
@@ -75,7 +74,6 @@
         android:layout_marginTop="-49dp"
         android:text="Attaque Special"
         android:layout_marginStart="230dp"/>
-
     <TextView
         android:id="@+id/activity_battle_resultText2"
         android:layout_width="match_parent"

@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:padding="10dp"
-        android:text="Plesae tap your name"/>
+        android:hint="Plesae tap your name"/>
     <TextView
         android:id="@+id/activity_game_caracterText"
         android:layout_width="match_parent"
@@ -75,6 +75,7 @@
         android:text="WARRIOR : \n Attaque Basique - Coup d’Épée\n Attaque Spéciale - Coup de Rage" />
 
     <Button
+        android:id="@+id/activity_game_buttonNext"
         android:layout_width="wrap_content"
         android:layout_height="63dp"
         android:layout_gravity="center"

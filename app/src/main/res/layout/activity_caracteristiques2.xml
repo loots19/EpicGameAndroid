@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:text="your choice"/>
+        android:hint="your choice"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:text="your choice"/>
+        android:hint="your choice"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:text="your choice"/>
+        android:hint="your choice"/>
     <TextView
         android:id="@+id/activity_game_Text"
         android:layout_width="match_parent"
@@ -71,7 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:text="your choice"/>
+        android:hint="your choice"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

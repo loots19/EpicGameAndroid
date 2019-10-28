@@ -21,7 +21,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:padding="10dp"
-        android:text="Plesae tap your name"/>
+        android:hint="Plesae tap your name" />
+
     <TextView
         android:id="@+id/activity_game_caracterText"
         android:layout_width="match_parent"
@@ -32,19 +33,19 @@
         android:textStyle="bold" />
 
     <ImageButton
-        android:id="@+id/activity_game_buttonMage"
+        android:id="@+id/activity_game2_buttonMage"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         app:srcCompat="@drawable/ic_1456914" />
 
     <ImageButton
-        android:id="@+id/activity_game_buttonRodeur"
+        android:id="@+id/activity_game2_buttonRodeur"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_1676583"/>
     <ImageButton
-        android:id="@+id/activity_game_buttonGuerrier"
+        android:id="@+id/activity_game2_buttonGuerrier"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_3325766_2196f3"/>
@@ -74,6 +75,7 @@
         android:text="WARRIOR : \n Attaque Basique - Coup d’Épée\n Attaque Spéciale - Coup de Rage" />
 
     <Button
+        android:id="@+id/activity_game2_buttonNext"
         android:layout_width="wrap_content"
         android:layout_height="63dp"
         android:layout_gravity="center"
