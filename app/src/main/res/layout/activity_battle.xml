@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Battle">
+    <ImageView
+        android:id="@+id/activity_battle_imageCaract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp" />
+
+    <TextView
+        android:id="@+id/activity_battle_nameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
+    <Button
+        android:id="@+id/activity_battle_buttonBasique"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Attaque basique"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/activity_battle_buttonSpecial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-49dp"
+        android:text="Attaque Special"
+        android:layout_marginStart="230dp"/>
+
+    <TextView
+        android:id="@+id/activity_battle_resultText"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/activity_battle_imageCaract2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp" />
+
+    <TextView
+        android:id="@+id/activity_battle_nameText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/activity_battle_buttonBasique2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Attaque basique"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/activity_battle_buttonSpecial2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-49dp"
+        android:text="Attaque Special"
+        android:layout_marginStart="230dp"/>
+
+    <TextView
+        android:id="@+id/activity_battle_resultText2"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="40dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>

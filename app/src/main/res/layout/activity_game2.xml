@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Game2">
+    <TextView
+        android:id="@+id/activity_game_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="player two"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/activity_game_nameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="Plesae tap your name"/>
+    <TextView
+        android:id="@+id/activity_game_caracterText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="select caracter"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/activity_game_buttonMage"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ic_1456914" />
+
+    <ImageButton
+        android:id="@+id/activity_game_buttonRodeur"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_1676583"/>
+    <ImageButton
+        android:id="@+id/activity_game_buttonGuerrier"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_3325766_2196f3"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="250dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="-245dp"
+        android:layout_marginStart="150dp"
+        android:text="MAGICUS : \n Attaque Basique - Boule de Feu\n Attaque Spéciale - Soin" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="250dp"
+        android:layout_height="66dp"
+        android:text="RANGER : \n Attaque Basique - Tir à l’Arc\n Attaque Spéciale - Concentration"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="150dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="250dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="15dp"
+        android:text="WARRIOR : \n Attaque Basique - Coup d’Épée\n Attaque Spéciale - Coup de Rage" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:text="NEXT"/>
+
+</LinearLayout>

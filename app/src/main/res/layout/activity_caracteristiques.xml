@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Caracteristiques">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CARACTERISTIQUE \nAttention le total force + agilité + intelligence doit être égal au niveau du joueur."
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="NIVEAU : (min 1, max 100)"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
+    <EditText
+        android:id="@+id/activity_caracteristique_niveauText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="your choice"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="FORCE : (min 0, max 100) "
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
+    <EditText
+        android:id="@+id/activity_caracteristique_forceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="your choice"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="AGILITE : (min 0, max 100) "
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/activity_caracteristique_agiliteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="your choice"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="INTELLIGENCE : (min 0, max 100) "
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
+    <EditText
+        android:id="@+id/activity_caracteristique_intelligenceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="your choice"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="LA VIE EST EGALE AU NIVEAU DU JOUEUR * 5 "
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="20dp" />
+    <Button
+        android:id="@+id/activity_caracteristique_buttonFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="FINISH"/>
+
+
+
+</LinearLayout>
