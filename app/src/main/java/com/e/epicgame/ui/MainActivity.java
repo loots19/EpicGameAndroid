@@ -1,4 +1,4 @@
-package com.e.epicgame;
+package com.e.epicgame.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,8 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
+import com.e.epicgame.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,10 +20,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mButtonLets = findViewById(R.id.button_Lets);
+
         mButtonLets.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent gameActivity = new Intent(MainActivity.this,Game.class);
+                Intent gameActivity = new Intent(MainActivity.this, Game.class);
                         startActivity(gameActivity);
 
             }

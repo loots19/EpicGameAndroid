@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Game">
+    tools:context=".ui.Game">
 
     <TextView
         android:id="@+id/activity_game_Text"
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:padding="10dp"
-        android:hint="Plesae tap your name"/>
+        android:hint="Please tap your name"/>
     <TextView
         android:id="@+id/activity_game_caracterText"
         android:layout_width="match_parent"

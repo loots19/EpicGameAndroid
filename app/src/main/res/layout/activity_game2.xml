@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Game2">
+    tools:context=".ui.Game2">
     <TextView
-        android:id="@+id/activity_game_Text"
+        android:id="@+id/activity_game2_Text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -16,15 +16,15 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/activity_game_nameText"
+        android:id="@+id/activity_game2_nameText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:padding="10dp"
-        android:hint="Plesae tap your name" />
+        android:hint="Please tap your name" />
 
     <TextView
-        android:id="@+id/activity_game_caracterText"
+        android:id="@+id/activity_game2_caracterText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"

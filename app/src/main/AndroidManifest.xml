@@ -9,12 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Battle"></activity>
-        <activity android:name=".Caracteristiques2" />
-        <activity android:name=".Game2" />
-        <activity android:name=".Caracteristiques" />
-        <activity android:name=".Game" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.Battle"></activity>
+        <activity android:name=".ui.Caracteristiques2" />
+        <activity android:name=".ui.Game2" />
+        <activity android:name=".ui.Caracteristiques" />
+        <activity android:name=".ui.Game" />
+        <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

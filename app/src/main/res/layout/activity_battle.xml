@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Battle">
+    tools:context=".ui.Battle">
     <ImageView
         android:id="@+id/activity_battle_imageCaract"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginStart="50dp"
-        app:srcCompat="@drawable/ic_1456914" />
+         />
 
     <TextView
         android:id="@+id/activity_battle_nameText"
@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginStart="50dp"
-        app:srcCompat="@drawable/ic_1456914" />
+       />
 
     <TextView
         android:id="@+id/activity_battle_nameText2"
