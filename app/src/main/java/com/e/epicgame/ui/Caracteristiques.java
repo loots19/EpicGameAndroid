@@ -42,14 +42,9 @@ public class Caracteristiques extends AppCompatActivity {
                 String a = mEditTextAgilité.getText().toString();
                 String i = mEditTextIntelligence.getText().toString();
 
-                float nValue = Float.valueOf(n);
-                float fValue = Float.valueOf(f);
-                float aValue = Float.valueOf(a);
-                float iValue = Float.valueOf(i);
 
 
-                if (nValue != fValue + aValue + iValue)
-                    Toast.makeText(Caracteristiques.this, "attention valeur incorrect", Toast.LENGTH_LONG).show();
+
 
                 Intent game2Activity = new Intent(Caracteristiques.this, Game2.class);
                 startActivity(game2Activity);
