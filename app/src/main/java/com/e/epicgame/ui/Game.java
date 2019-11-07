@@ -7,7 +7,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,9 +14,7 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.e.epicgame.R;
-import com.e.epicgame.ui.model.Caracter;
 import com.e.epicgame.ui.model.Player;
-import com.e.epicgame.ui.model.User;
 
 public class Game extends AppCompatActivity implements View.OnClickListener {
 
@@ -27,12 +24,11 @@ public class Game extends AppCompatActivity implements View.OnClickListener {
     private EditText mNameInput;
     private Button mButtonNext;
     private Player mPlayer;
-    private User mUser;
-    private Caracter mCaracter;
     public static final String PREF_KEY_FIRSTNAME = "PREF_KEY_FIRSTNAME";
-    public static final String PREF_KEY_AVATARMA = "PREF_KEY_AVATARMA";
-    public static final String PREF_KEY_AVATARGE = "PREF_KEY_AVATARGE";
-    public static final String PREF_KEY_AVATARRO = "PREF_KEY_AVATARRO";
+    public static final String PREF_KEY_FIRSTNAME1 = "PREF_KEY_FIRSTNAME1";
+    public static final String PREF_KEY_AVATARMA = "PREF_KEY_AVATAR";
+    public static final String PREF_KEY_AVATARGE = "PREF_KEY_AVATAR";
+    public static final String PREF_KEY_AVATARRO = "PREF_KEY_AVATAR";
     public static final String PREF_SHARED = "PREF_SHARED";
 
 
@@ -40,7 +36,6 @@ public class Game extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
-
 
         mButtonGuerrier = findViewById(R.id.activity_game_buttonGuerrier);
         mButtonMage = findViewById(R.id.activity_game_buttonMage);
@@ -55,7 +50,6 @@ public class Game extends AppCompatActivity implements View.OnClickListener {
 
 
         mButtonNext.setEnabled(false);
-
 
         mNameInput.addTextChangedListener(new TextWatcher() {
             @Override
@@ -84,13 +78,11 @@ public class Game extends AppCompatActivity implements View.OnClickListener {
 
         } else if (v == mButtonMage) {
             saveImageMage();
-
-            Toast.makeText(this, "Vous avez choisi le Mage", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Vous avez choisi le Mage", Toast.LENGTH_SHORT).show();
 
         } else if (v == mButtonRodeur) {
             saveImageRodeur();
-            Toast.makeText(this, "Vous avez choisi le Rodeur", Toast.LENGTH_LONG).show();
-
+            Toast.makeText(this, "Vous avez choisi le Rodeur", Toast.LENGTH_SHORT).show();
 
         } else if (v == mButtonNext) {
             mButtonNext.setEnabled(true);
@@ -104,32 +96,24 @@ public class Game extends AppCompatActivity implements View.OnClickListener {
 
     public void saveData() {
         SharedPreferences mSharedPrefrences = getSharedPreferences(PREF_SHARED, MODE_PRIVATE);
-        SharedPreferences.Editor editor = mSharedPrefrences.edit();
-        editor.putString(PREF_KEY_FIRSTNAME, mNameInput.getText().toString());
-        editor.apply();
+         mSharedPrefrences.edit().putString(PREF_KEY_FIRSTNAME, mNameInput.getText().toString()).apply();
     }
 
     public void saveImageMage() {
         SharedPreferences mSharedPrefrences = getSharedPreferences(PREF_SHARED, MODE_PRIVATE);
-        SharedPreferences.Editor editor = mSharedPrefrences.edit();
-        editor.putInt(PREF_KEY_AVATARMA, R.drawable.ic_1456914);
-        editor.apply();
+        mSharedPrefrences.edit().putInt(PREF_KEY_AVATARMA, R.drawable.ic_1456914).apply();
 
     }
 
     public void saveImageGuerrier() {
         SharedPreferences mSharedPrefrences = getSharedPreferences(PREF_SHARED, MODE_PRIVATE);
-        SharedPreferences.Editor editor = mSharedPrefrences.edit();
-        editor.putInt(PREF_KEY_AVATARGE, R.drawable.ic_3325766_2196f3);
-        editor.apply();
+        mSharedPrefrences.edit().putInt(PREF_KEY_AVATARGE, R.drawable.ic_3325766_2196f3).apply();
 
     }
 
     public void saveImageRodeur() {
         SharedPreferences mSharedPrefrences = getSharedPreferences(PREF_SHARED, MODE_PRIVATE);
-        SharedPreferences.Editor editor = mSharedPrefrences.edit();
-        editor.putInt(PREF_KEY_AVATARRO, R.drawable.ic_1676583);
-        editor.apply();
+        mSharedPrefrences.edit().putInt(PREF_KEY_AVATARRO, R.drawable.ic_1676583).apply();
     }
 
 }

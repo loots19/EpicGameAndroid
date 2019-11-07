@@ -1,30 +1,45 @@
 package com.e.epicgame.ui.model;
 
-public class Player {
+import android.os.Parcel;
+import android.os.Parcelable;
 
-    private static int  mNiveau;
-    private static int mForce;
-    private static int mAgilité;
-    private static int mIntelligence;
-    private static int mVie;
-    private int mNumPlayer;
+public class Player implements Parcelable {
+    private int mNiveau;
+    private int mForce;
+    private int mAgilite;
+    private int mIntelligence;
+    private int mVie;
 
-    public Player( int niveau, int force, int agilité, int intelligence, int vie, int numPlayer) {
-
+    public Player(int niveau, int force, int agilite, int intelligence, int vie) {
         mNiveau = niveau;
         mForce = force;
-        mAgilité = agilité;
+        mAgilite = agilite;
         mIntelligence = intelligence;
         mVie = vie;
-        mNumPlayer = numPlayer;
-    }
-    public boolean estMort(){
-        return (this.mVie <= 0);
     }
 
 
+    protected Player(Parcel in) {
+        mNiveau = in.readInt();
+        mForce = in.readInt();
+        mAgilite = in.readInt();
+        mIntelligence = in.readInt();
+        mVie = in.readInt();
+    }
 
-    public static int getNiveau() {
+    public static final Creator<Player> CREATOR = new Creator<Player>() {
+        @Override
+        public Player createFromParcel(Parcel in) {
+            return new Player(in);
+        }
+
+        @Override
+        public Player[] newArray(int size) {
+            return new Player[size];
+        }
+    };
+
+    public int getNiveau() {
         return mNiveau;
     }
 
@@ -32,7 +47,7 @@ public class Player {
         mNiveau = niveau;
     }
 
-    public static int getForce() {
+    public int getForce() {
         return mForce;
     }
 
@@ -40,15 +55,15 @@ public class Player {
         mForce = force;
     }
 
-    public static int getAgilité() {
-        return mAgilité;
+    public int getAgilite() {
+        return mAgilite;
     }
 
-    public static void setAgilité(int agilité) {
-        mAgilité = agilité;
+    public void setAgilite(int agilite) {
+        mAgilite = agilite;
     }
 
-    public static int getIntelligence() {
+    public int getIntelligence() {
         return mIntelligence;
     }
 
@@ -56,22 +71,25 @@ public class Player {
         mIntelligence = intelligence;
     }
 
-    public static int getVie() {
+    public int getVie() {
         return mVie;
     }
 
-    public static void setVie(int vie) {
-        mVie = (mVie<= 0 ? 0 : mVie);
+    public void setVie(int vie) {
+        mVie = vie;
     }
 
-    public int getNumPlayer() {
-        return mNumPlayer;
+    @Override
+    public int describeContents() {
+        return 0;
     }
 
-    public void setNumPlayer(int numPlayer) {
-        mNumPlayer = numPlayer;
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(mNiveau);
+        dest.writeInt(mForce);
+        dest.writeInt(mAgilite);
+        dest.writeInt(mIntelligence);
+        dest.writeInt(mVie);
     }
-
-
-
 }

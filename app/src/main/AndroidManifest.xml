@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.Battle"></activity>
+        <activity android:name=".ui.Battle" />
         <activity android:name=".ui.Caracteristiques2" />
         <activity android:name=".ui.Game2" />
         <activity android:name=".ui.Caracteristiques" />
